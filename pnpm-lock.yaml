@@ -13,7 +13,7 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.3)
       '@astrojs/react':
         specifier: ^4.4.0
-        version: 4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)
+        version: 4.4.0(@types/node@24.6.2)(@types/react-dom@19.2.1(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.2.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)
       '@astrojs/sitemap':
         specifier: ^3.6.0
         version: 3.6.0
@@ -24,11 +24,14 @@ importers:
         specifier: ^19.1.16
         version: 19.1.16
       '@types/react-dom':
-        specifier: ^19.1.9
-        version: 19.1.9(@types/react@19.1.16)
+        specifier: ^19.2.1
+        version: 19.2.1(@types/react@19.1.16)
       astro:
         specifier: ^5.13.10
         version: 5.13.10(@types/node@24.6.2)(jiti@1.21.7)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.7.1)
+      astro-robots-txt:
+        specifier: ^1.0.0
+        version: 1.0.0
       firebase:
         specifier: ^12.2.1
         version: 12.2.1
@@ -42,8 +45,8 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.0.0
-        version: 19.1.0(react@19.1.0)
+        specifier: ^19.2.0
+        version: 19.2.0(react@19.1.0)
       sharp:
         specifier: ^0.34.3
         version: 0.34.3
@@ -990,10 +993,10 @@ packages:
   '@types/node@24.6.2':
     resolution: {integrity: sha512-d2L25Y4j+W3ZlNAeMKcy7yDsK425ibcAOO2t7aPTz6gNMH0z2GThtwENCDc0d/Pw9wgyRqE5Px1wkV7naz8ang==}
 
-  '@types/react-dom@19.1.9':
-    resolution: {integrity: sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ==}
+  '@types/react-dom@19.2.1':
+    resolution: {integrity: sha512-/EEvYBdT3BflCWvTMO7YkYBHVE9Ci6XdqZciZANQgKpaiDRGOLIlRo91jbTNRQjgPFWVaRxcYc0luVNFitz57A==}
     peerDependencies:
-      '@types/react': ^19.0.0
+      '@types/react': ^19.2.0
 
   '@types/react@19.1.16':
     resolution: {integrity: sha512-WBM/nDbEZmDUORKnh5i1bTnAz6vTohUf9b8esSMu+b24+srbaxa04UbJgWx78CVfNXA20sNu0odEIluZDFdCog==}
@@ -1085,6 +1088,9 @@ packages:
 
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+
+  astro-robots-txt@1.0.0:
+    resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
 
   astro@5.13.10:
     resolution: {integrity: sha512-PgIrIYvrR7fCoSPPt1sGlpoYK/FNil1BwKazND1DyaZC7SbWLi9hdIHM3ApdrL2SWK7oiADRPw7cTn80UyDWqA==}
@@ -1394,6 +1400,10 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  filename-reserved-regex@3.0.0:
+    resolution: {integrity: sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -2002,10 +2012,10 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
-  react-dom@19.1.0:
-    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
+  react-dom@19.2.0:
+    resolution: {integrity: sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==}
     peerDependencies:
-      react: ^19.1.0
+      react: ^19.2.0
 
   react-refresh@0.17.0:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
@@ -2121,8 +2131,8 @@ packages:
   sax@1.4.1:
     resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
 
-  scheduler@0.26.0:
-    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -2399,6 +2409,10 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  valid-filename@4.0.0:
+    resolution: {integrity: sha512-VEYTpTVPMgO799f2wI7zWf0x2C54bPX6NAfbZ2Z8kZn76p+3rEYCTYVYzMUcVSMvakxMQTriBf24s3+WeXJtEg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
@@ -2745,13 +2759,13 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)':
+  '@astrojs/react@4.4.0(@types/node@24.6.2)(@types/react-dom@19.2.1(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.2.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)':
     dependencies:
       '@types/react': 19.1.16
-      '@types/react-dom': 19.1.9(@types/react@19.1.16)
+      '@types/react-dom': 19.2.1(@types/react@19.1.16)
       '@vitejs/plugin-react': 4.7.0(vite@6.3.6(@types/node@24.6.2)(jiti@1.21.7)(yaml@2.7.1))
       react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
+      react-dom: 19.2.0(react@19.1.0)
       ultrahtml: 1.6.0
       vite: 6.3.6(@types/node@24.6.2)(jiti@1.21.7)(yaml@2.7.1)
     transitivePeerDependencies:
@@ -3676,7 +3690,7 @@ snapshots:
     dependencies:
       undici-types: 7.13.0
 
-  '@types/react-dom@19.1.9(@types/react@19.1.16)':
+  '@types/react-dom@19.2.1(@types/react@19.1.16)':
     dependencies:
       '@types/react': 19.1.16
 
@@ -3791,6 +3805,11 @@ snapshots:
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
+
+  astro-robots-txt@1.0.0:
+    dependencies:
+      valid-filename: 4.0.0
+      zod: 3.25.76
 
   astro@5.13.10(@types/node@24.6.2)(jiti@1.21.7)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.7.1):
     dependencies:
@@ -4182,6 +4201,8 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  filename-reserved-regex@3.0.0: {}
 
   fill-range@7.1.1:
     dependencies:
@@ -5013,10 +5034,10 @@ snapshots:
 
   radix3@1.1.2: {}
 
-  react-dom@19.1.0(react@19.1.0):
+  react-dom@19.2.0(react@19.1.0):
     dependencies:
       react: 19.1.0
-      scheduler: 0.26.0
+      scheduler: 0.27.0
 
   react-refresh@0.17.0: {}
 
@@ -5193,7 +5214,7 @@ snapshots:
 
   sax@1.4.1: {}
 
-  scheduler@0.26.0: {}
+  scheduler@0.27.0: {}
 
   semver@6.3.1: {}
 
@@ -5487,6 +5508,10 @@ snapshots:
       picocolors: 1.1.1
 
   util-deprecate@1.0.2: {}
+
+  valid-filename@4.0.0:
+    dependencies:
+      filename-reserved-regex: 3.0.0
 
   vfile-location@5.0.3:
     dependencies:
