@@ -14,12 +14,6 @@ export default defineConfig({
       // 🧹 Hilangkan halaman yang tidak perlu (contoh: 404)
       filter: (page) => !page.includes("/404"),
 
-      // ➕ Tambahkan halaman manual
-      customPages: [
-        "https://seowithgaluh.netlify.app/blog",
-        "https://seowithgaluh.netlify.app/services",
-      ],
-
       // ⚙️ Atur meta tambahan (SEO-friendly)
       serialize(item) {
         return {
