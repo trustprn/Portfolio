@@ -16,13 +16,9 @@ export default defineConfig({
       filter: (page) => !page.includes("/404"),
 
       // Atur meta tambahan (SEO-friendly)
-      serialize(item) {
-        return {
-          url: item.url,
-          changefreq: "always",
-          priority: item.url.endsWith("/") ? 1.0 : 0.7,
-        };
-      },
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: new Date("2022-02-24"),
     }),
     robotsTxt({
       policy: [{ userAgent: "*", allow: "/" }],
