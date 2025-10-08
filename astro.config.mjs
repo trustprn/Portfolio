@@ -7,7 +7,32 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://seowithgaluh.netlify.app",
-  integrations: [tailwind(), react(), sitemap()],
+  integrations: [
+    tailwind(),
+    react(),
+    sitemap({
+      // 🧹 Hilangkan halaman yang tidak perlu (contoh: 404)
+      filter: (page) => !page.includes("/404"),
+
+      // ➕ Tambahkan halaman manual
+      customPages: [
+        "https://seowithgaluh.netlify.app/blog",
+        "https://seowithgaluh.netlify.app/services",
+      ],
+
+      // ⚙️ Atur meta tambahan (SEO-friendly)
+      serialize(item) {
+        return {
+          url: item.url,
+          changefreq: "weekly",
+          priority: item.url.endsWith("/") ? 1.0 : 0.7,
+        };
+      },
+
+      // 🗂️ Ubah nama file sitemap kalau mau
+      filename: "sitemap.xml",
+    }),
+  ],
   vite: {
     resolve: {
       alias: {
