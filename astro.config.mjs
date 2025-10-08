@@ -28,9 +28,6 @@ export default defineConfig({
           priority: item.url.endsWith("/") ? 1.0 : 0.7,
         };
       },
-
-      // 🗂️ Ubah nama file sitemap kalau mau
-      filename: "sitemap.xml",
     }),
   ],
   vite: {
