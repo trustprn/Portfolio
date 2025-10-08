@@ -13,7 +13,7 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.6.2)(typescript@5.9.3)
       '@astrojs/react':
         specifier: ^4.4.0
-        version: 4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)
+        version: 4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.2.2))(@types/react@19.2.2)(jiti@1.21.7)(react-dom@19.1.0(react@19.2.0))(react@19.2.0)(yaml@2.7.1)
       '@astrojs/sitemap':
         specifier: ^3.6.0
         version: 3.6.0
@@ -21,14 +21,17 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2(astro@5.13.10(@types/node@24.6.2)(jiti@1.21.7)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.7.1))(tailwindcss@3.4.17)
       '@types/react':
-        specifier: ^19.1.16
-        version: 19.1.16
+        specifier: ^19.2.2
+        version: 19.2.2
       '@types/react-dom':
         specifier: ^19.1.9
-        version: 19.1.9(@types/react@19.1.16)
+        version: 19.1.9(@types/react@19.2.2)
       astro:
         specifier: ^5.13.10
         version: 5.13.10(@types/node@24.6.2)(jiti@1.21.7)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.7.1)
+      astro-robots-txt:
+        specifier: ^1.0.0
+        version: 1.0.0
       firebase:
         specifier: ^12.2.1
         version: 12.2.1
@@ -39,11 +42,11 @@ importers:
         specifier: ^10.18.1
         version: 10.18.1
       react:
-        specifier: ^19.0.0
-        version: 19.1.0
+        specifier: ^19.2.0
+        version: 19.2.0
       react-dom:
         specifier: ^19.0.0
-        version: 19.1.0(react@19.1.0)
+        version: 19.1.0(react@19.2.0)
       sharp:
         specifier: ^0.34.3
         version: 0.34.3
@@ -995,8 +998,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.16':
-    resolution: {integrity: sha512-WBM/nDbEZmDUORKnh5i1bTnAz6vTohUf9b8esSMu+b24+srbaxa04UbJgWx78CVfNXA20sNu0odEIluZDFdCog==}
+  '@types/react@19.2.2':
+    resolution: {integrity: sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==}
 
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
@@ -1085,6 +1088,9 @@ packages:
 
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+
+  astro-robots-txt@1.0.0:
+    resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
 
   astro@5.13.10:
     resolution: {integrity: sha512-PgIrIYvrR7fCoSPPt1sGlpoYK/FNil1BwKazND1DyaZC7SbWLi9hdIHM3ApdrL2SWK7oiADRPw7cTn80UyDWqA==}
@@ -1394,6 +1400,10 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  filename-reserved-regex@3.0.0:
+    resolution: {integrity: sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -2011,8 +2021,8 @@ packages:
     resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.1.0:
-    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
+  react@19.2.0:
+    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -2400,6 +2410,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  valid-filename@4.0.0:
+    resolution: {integrity: sha512-VEYTpTVPMgO799f2wI7zWf0x2C54bPX6NAfbZ2Z8kZn76p+3rEYCTYVYzMUcVSMvakxMQTriBf24s3+WeXJtEg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
 
@@ -2745,13 +2759,13 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.1.16))(@types/react@19.1.16)(jiti@1.21.7)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(yaml@2.7.1)':
+  '@astrojs/react@4.4.0(@types/node@24.6.2)(@types/react-dom@19.1.9(@types/react@19.2.2))(@types/react@19.2.2)(jiti@1.21.7)(react-dom@19.1.0(react@19.2.0))(react@19.2.0)(yaml@2.7.1)':
     dependencies:
-      '@types/react': 19.1.16
-      '@types/react-dom': 19.1.9(@types/react@19.1.16)
+      '@types/react': 19.2.2
+      '@types/react-dom': 19.1.9(@types/react@19.2.2)
       '@vitejs/plugin-react': 4.7.0(vite@6.3.6(@types/node@24.6.2)(jiti@1.21.7)(yaml@2.7.1))
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
+      react: 19.2.0
+      react-dom: 19.1.0(react@19.2.0)
       ultrahtml: 1.6.0
       vite: 6.3.6(@types/node@24.6.2)(jiti@1.21.7)(yaml@2.7.1)
     transitivePeerDependencies:
@@ -3676,11 +3690,11 @@ snapshots:
     dependencies:
       undici-types: 7.13.0
 
-  '@types/react-dom@19.1.9(@types/react@19.1.16)':
+  '@types/react-dom@19.1.9(@types/react@19.2.2)':
     dependencies:
-      '@types/react': 19.1.16
+      '@types/react': 19.2.2
 
-  '@types/react@19.1.16':
+  '@types/react@19.2.2':
     dependencies:
       csstype: 3.1.3
 
@@ -3791,6 +3805,11 @@ snapshots:
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
+
+  astro-robots-txt@1.0.0:
+    dependencies:
+      valid-filename: 4.0.0
+      zod: 3.25.76
 
   astro@5.13.10(@types/node@24.6.2)(jiti@1.21.7)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.7.1):
     dependencies:
@@ -4182,6 +4201,8 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  filename-reserved-regex@3.0.0: {}
 
   fill-range@7.1.1:
     dependencies:
@@ -5013,14 +5034,14 @@ snapshots:
 
   radix3@1.1.2: {}
 
-  react-dom@19.1.0(react@19.1.0):
+  react-dom@19.1.0(react@19.2.0):
     dependencies:
-      react: 19.1.0
+      react: 19.2.0
       scheduler: 0.26.0
 
   react-refresh@0.17.0: {}
 
-  react@19.1.0: {}
+  react@19.2.0: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -5487,6 +5508,10 @@ snapshots:
       picocolors: 1.1.1
 
   util-deprecate@1.0.2: {}
+
+  valid-filename@4.0.0:
+    dependencies:
+      filename-reserved-regex: 3.0.0
 
   vfile-location@5.0.3:
     dependencies:
