@@ -8,7 +8,7 @@
     ],
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "https://seowithgaluh.netlify.app/",
+    "baseUrl": "src",
     "paths": {
       "@/*": [
         "src/*"
@@ -21,7 +21,6 @@
     "jsxImportSource": "react"
   },
   "include": [
-    "src/**/*",
-    "astro.config.ts"
+    "src/**/*"
   ]
 }
